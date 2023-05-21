@@ -24,7 +24,7 @@ class_names = ['daisy', 'dandelion', 'rose', 'sunflower', 'tulip']
 st.header("Flowers Recognition")
 
 
-def homepage():
+
  
 
 
@@ -63,8 +63,7 @@ def launch():
     orientation="horizontal"
     )
 
-    if selected == "Code":
-        homepage()
+    
     if selected == "Try Model":
         try_model()
     if selected == "About":

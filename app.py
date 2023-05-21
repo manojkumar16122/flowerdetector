@@ -72,8 +72,9 @@ def launch():
 
 
 def about():
-    st.write("### MANOJKUMAR V")
+    st.write("### MANOJKUMAR V","SUDARMUGI B" ,"AND AASHIQMOHAMED A")
     st.write("TEAM ROLEX")
+    st
     
     
 

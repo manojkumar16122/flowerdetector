@@ -28,7 +28,7 @@ st.header("Flowers Recognition")
  
 
 
-def try_model():
+def flowerd():
     with st.spinner("Loading Model"):
         model = load_model()
     uploaded_file = st.file_uploader("Choose an Image", type=['png', 'jpg', 'JPEG'])
@@ -65,7 +65,7 @@ def launch():
 
     
     if selected == "Detect Flowers":
-        try_model()
+        flowerd()
     if selected == "About":
         about()
     
@@ -74,7 +74,7 @@ def launch():
 def about():
     st.write("### MANOJKUMAR V","SUDARMUGI B" ,"AND AASHIQMOHAMED A")
     st.write("TEAM ROLEX")
-    st
+    st.write("In this application you are able to detect different types of flowers ")
     
     
 

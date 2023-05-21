@@ -56,11 +56,11 @@ def launch():
     
     selected = option_menu(
     menu_title=None,
-    options = ["Code", "Try Model", "About"],
-    icons= ["code-slash","play", "info"],
+    options = ["Detect Flowers", "About"],
+    icons= ["play", "info"],
     menu_icon="list",
     default_index=0,
-    orientation="horizontal"
+    orientation="vertical"
     )
 
     

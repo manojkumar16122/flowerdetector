@@ -5,7 +5,7 @@ import numpy as np
 from streamlit_option_menu import option_menu
 
 st.set_page_config(
-    page_title="Flowers Detector",
+    page_title="Flowers Recognition",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
@@ -21,11 +21,13 @@ CHANNELS = 3
 class_indices = {'daisy': 0, 'dandelion': 1, 'rose': 2, 'sunflower': 3, 'tulip': 4}
 class_names = ['daisy', 'dandelion', 'rose', 'sunflower', 'tulip']
 
-st.header("Flower Detector")
+st.header("Flowers Recognition")
 
 
 def homepage():
-     
+     st.subheader("Dataset")
+    with st.expander("Link"):
+        st.write("[Kaggle](https://www.kaggle.com/datasets/alxmamaev/flowers-recognition)")
    
 
     with st.expander("Examples"):
@@ -144,7 +146,7 @@ def launch():
     
     selected = option_menu(
     menu_title=None,
-    options = [ "Try Model", "About"],
+    options = ["Code", "Try Model", "About"],
     icons= ["code-slash","play", "info"],
     menu_icon="list",
     default_index=0,
@@ -160,9 +162,15 @@ def launch():
     
 
 def about():
-    st.write("##Developed by Manojkumar V , Sudarmugi B and Aashiqmohamed A")
-    st.write("[Github:](https://github.com/manojkumar16122)") 
-            
-            
+    st.write("### Ibrahim M. Nasser")
+    st.write("Freelance Machine Learning Engineer")
+    st.write("[Website](https://ibrahim-nasser.com/)",  
+             "[LinkedIn](https://www.linkedin.com/in/ibrahimnasser96/)",
+             "[GitHub](https://github.com/96ibman)",
+             "[Youtube](https://www.youtube.com/channel/UC7N-dy3UbSBHnwwv-vulBAA)",
+             "[Twitter](https://twitter.com/mleng_ibrahim)"
+            )
+    st.image("my_picture.jpeg", width=350)
 
-
+if __name__ == "__main__":
+    launch()

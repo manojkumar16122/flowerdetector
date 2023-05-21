@@ -27,7 +27,7 @@ st.header("Flowers Recognition")
 def homepage():
     
 
-    with st.expander("Examples"):
+  
         col1, col2, col3 = st.columns(3)
         with col1:
             st.image("datasamples/daisy.jpg", width=200, caption="daisy")

@@ -25,31 +25,7 @@ st.header("Flowers Recognition")
 
 
 def homepage():
-    st.subheader("Dataset")
-    with st.expander("Link"):
-        st.write("[Kaggle](https://www.kaggle.com/datasets/alxmamaev/flowers-recognition)")
-
-    with st.expander("Examples"):
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            st.image("datasamples/daisy.jpg", width=200, caption="daisy")
-        with col2:
-            st.image("datasamples/dandelion.jpg", width=200, caption="dandelion")
-        with col3:
-            st.image("datasamples/rose.jpg", width=250, caption="rose")
-        col4, col5, col6 = st.columns(3)
-        with col4:
-            st.image("datasamples/sunflower.jpg", width=200, caption="sunflower")
-        with col5:
-            st.image("datasamples/tulip.jpg", width=200, caption="tulip")
-    
-    with st.expander("Splits"):
-        st.write("**Overall Samples:** 4318")
-        st.write("**Training:** 70%")
-        st.write("**Validaiton:** 20%")
-        st.write("**Testing:** 10%")
-    
-     #########################################################code
+ 
 
 
 def try_model():

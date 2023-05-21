@@ -71,15 +71,5 @@ def launch():
     
 
 def about():
-    st.write("### Ibrahim M. Nasser")
-    st.write("Freelance Machine Learning Engineer")
-    st.write("[Website](https://ibrahim-nasser.com/)",  
-             "[LinkedIn](https://www.linkedin.com/in/ibrahimnasser96/)",
-             "[GitHub](https://github.com/96ibman)",
-             "[Youtube](https://www.youtube.com/channel/UC7N-dy3UbSBHnwwv-vulBAA)",
-             "[Twitter](https://twitter.com/mleng_ibrahim)"
-            )
-    st.image("my_picture.jpeg", width=350)
-
-if __name__ == "__main__":
-    launch()
+    st.write("Team Rolex")
+ 

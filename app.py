@@ -5,7 +5,7 @@ import numpy as np
 from streamlit_option_menu import option_menu
 
 st.set_page_config(
-    page_title="Flowers Recognition",
+    page_title="Flowers Detector",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
@@ -21,10 +21,11 @@ CHANNELS = 3
 class_indices = {'daisy': 0, 'dandelion': 1, 'rose': 2, 'sunflower': 3, 'tulip': 4}
 class_names = ['daisy', 'dandelion', 'rose', 'sunflower', 'tulip']
 
-st.header("Flowers Recognition")
+st.header("Flower Detector")
 
 
 def homepage():
+     
    
 
     with st.expander("Examples"):
@@ -143,7 +144,7 @@ def launch():
     
     selected = option_menu(
     menu_title=None,
-    options = ["Code", "Try Model", "About"],
+    options = [ "Try Model", "About"],
     icons= ["code-slash","play", "info"],
     menu_icon="list",
     default_index=0,
@@ -159,15 +160,9 @@ def launch():
     
 
 def about():
-    st.write("### Ibrahim M. Nasser")
-    st.write("Freelance Machine Learning Engineer")
-    st.write("[Website](https://ibrahim-nasser.com/)",  
-             "[LinkedIn](https://www.linkedin.com/in/ibrahimnasser96/)",
-             "[GitHub](https://github.com/96ibman)",
-             "[Youtube](https://www.youtube.com/channel/UC7N-dy3UbSBHnwwv-vulBAA)",
-             "[Twitter](https://twitter.com/mleng_ibrahim)"
-            )
-    st.image("my_picture.jpeg", width=350)
+    st.write("##Developed by Manojkumar V , Sudarmugi B and Aashiqmohamed A")
+    st.write("[Github:](https://github.com/manojkumar16122)") 
+            
+            
 
-if __name__ == "__main__":
-    launch()
+

@@ -25,9 +25,7 @@ st.header("Flowers Recognition")
 
 
 def homepage():
-    st.subheader("Dataset")
-    with st.expander("Link"):
-        st.write("[Kaggle](https://www.kaggle.com/datasets/alxmamaev/flowers-recognition)")
+   
 
     with st.expander("Examples"):
         col1, col2, col3 = st.columns(3)

@@ -64,7 +64,7 @@ def launch():
     )
 
     
-    if selected == "Try Model":
+    if selected == "Detect Flowers":
         try_model()
     if selected == "About":
         about()

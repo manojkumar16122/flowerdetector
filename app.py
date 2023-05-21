@@ -22,15 +22,6 @@ class_indices = {'daisy': 0, 'dandelion': 1, 'rose': 2, 'sunflower': 3, 'tulip':
 class_names = ['daisy', 'dandelion', 'rose', 'sunflower', 'tulip']
 
 st.header("Flowers Recognition")
-
-def homepage():
-
-
-
-
- 
-
-
 def flowerd():
     with st.spinner("Loading Model"):
         model = load_model()

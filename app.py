@@ -25,7 +25,7 @@ st.header("Flowers Recognition")
 
 
 def homepage():
-    
+        with st.expander("Examples"):
 
   
         col1, col2, col3 = st.columns(3)

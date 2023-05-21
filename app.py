@@ -23,6 +23,9 @@ class_names = ['daisy', 'dandelion', 'rose', 'sunflower', 'tulip']
 
 st.header("Flowers Recognition")
 
+def homepage():
+
+
 
 
  
@@ -72,7 +75,7 @@ def launch():
 
 
 def about():
-    st.write("### MANOJKUMAR V","SUDARMUGI B" ,"AND AASHIQMOHAMED A")
+    st.write("### MANOJKUMAR V, ","SUDARMUGI B, " ,"AND AASHIQMOHAMED A")
     st.write("TEAM ROLEX")
     st.write("In this application you are able to detect different types of flowers ")
     

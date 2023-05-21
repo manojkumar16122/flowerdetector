@@ -49,72 +49,7 @@ def homepage():
         st.write("**Validaiton:** 20%")
         st.write("**Testing:** 10%")
     
-    with st.expander("Data Augmentation"):
-        code = """
-        ImageDataGenerator(
-            rescale = 1./255,
-            rotation_range = 25,
-            shear_range = 0.5,
-            zoom_range = 0.5,
-            width_shift_range = 0.2,
-            height_shift_range=0.2,
-            horizontal_flip=True
-            )
-        
-        """
-        st.code(code, language='python')
-    
-    with st.expander("Image Shape"):
-        st.write((IMAGE_SIZE, IMAGE_SIZE, CHANNELS))
-    
-    st.subheader("Model Architecture")
-
-    with st.expander("Feature Extraction"):
-        code = """
-mobile_net = MobileNet(
-    weights = 'imagenet', 
-    include_top = False, 
-    input_shape = IMG_SHAPE)
-        
-for layer in mobile_net.layers:
-            layer.trainable = False
-        """
-        st.code(code, language='python')
-
-    with st.expander("Final Model"):
-
-        code = """
-        model = Sequential([
-        mobile_net,
-        GlobalAveragePooling2D(),
-        Dense(1024, activation='relu'),
-        Dense(5, activation='softmax')
-        ])
-        """
-        st.code(code, language='python')
-
-    st.write("**Optimizer:**", "ADAM")
-    st.write("**Loss:**", "Categorical Crossentropy")
-
-    st.subheader("Training and Validaiton Loss")
-    st.image("loss.png")
-
-    st.subheader("Model Testing")
-    code = """
-testing = ImageDataGenerator(rescale = 1./255)
-test_batches = testing.flow_from_directory(
-                    TEST_PATH, 
-                    target_size=(IMAGE_SIZE,IMAGE_SIZE), 
-                    batch_size=BATCH_SIZE, 
-                    class_mode="categorical",
-                    seed=42)
-
-results = model.evaluate(test_batches)
-    """
-    st.code(code, language='python')
-    st.write("**Testing Loss:**","0.32296934723854065")
-    st.write("**Testing Accuracy:**","0.8812785148620605")
-
+     #########################################################code
 
 
 def try_model():
